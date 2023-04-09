@@ -429,10 +429,8 @@ Recipes
 .recipes-container{
   display: grid;
   gap: 2rem 1rem;
-  border: 2px solid red;
 }
 .tags-container{
-  border: 2px solid blue;
   order: 1;
   display: flex;
   flex-direction: column;
@@ -442,7 +440,6 @@ Recipes
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
-  border: 2px solid green;
 }
 .tags-container h4{
   margin-bottom: 0.5rem;
@@ -504,6 +501,58 @@ Recipes
   }
 }
 @media screen and (min-width: 1200px) {
+  .recipes-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recipe h5{
+    font-size: 1.15rem;
+  }
+}
+/*
+=============== 
+Error
+===============
+*/
+.error-page{
+  text-align: center;
+  padding-top: 5rem;
+}
+.error-page h1{
+  font-size: 9rem;
+}
+/*
+=============== 
+About
+===============
+*/
+.about-page h2{
+  text-transform: none;
+  font-weight: bold;
+}
+.about-page{
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.about-img{
+  border-radius: var(--borderRadius);
+  height: 300px;
+}
+
+@media screen and (min-width:992px) {
+  .about-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-img{
+    height: 100%;
+  }
+  
+}
+
+.featured-title{
+  text-align: center;
 }
 /*
 =============== 
